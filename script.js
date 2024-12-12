@@ -143,7 +143,7 @@ function displayQuestion() {
 
   const questionElement = document.createElement("div");
   questionElement.className = "question";
-  questionElement.innerHTML = ${currentQuestion + 1}.${questionData.question};
+  questionElement.innerHTML = `${currentQuestion + 1}. ${questionData.question}`;
 
   const optionsElement = document.createElement("div");
   optionsElement.className = "options";
@@ -200,7 +200,7 @@ function displayResult() {
   submitButton.style.display = "none";
   retryButton.style.display = "inline-block";
   showAnswerButton.style.display = "inline-block";
-  resultContainer.innerHTML = You scored ${score} out of ${quizData.length}!;
+  resultContainer.innerHTML = `You scored ${score} out of ${quizData.length}!`;
 }
 
 function retryQuiz() {
